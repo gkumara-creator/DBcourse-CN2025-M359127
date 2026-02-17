@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <style>
+        /* page background */
+body{
+    background: linear-gradient(135deg, crimson, #8b0000);
+    font-family: sans-serif;
+}
+
+/* center form */
+.form-container{
+    margin-top: 80px;
+    text-align: center;
+}
+
+/* table card style */
+.reg-table{
+    margin: auto;
+    background: white;
+    padding: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 100px rgba(0,0,0,0.3);
+    height: 300px;
+}
+
+/* heading */
+.reg-table th{
+    font-size: 20px;
+    padding: 15px;
+    color: crimson;
+}
+
+/* cells */
+.reg-table td{
+    padding: 15px 15px;
+}
+
+/* inputs */
+input, select{
+    width: 180px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #c9c7c7;
+}
+
+/* focus effect */
+input:focus, select:focus{
+    outline: none;
+    border-color: crimson;
+    box-shadow: 0 0 5px crimson;
+}
+
+/* button */
+button{
+    background: crimson;
+    color: white;
+    padding: 8px 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+button:hover{
+    background: black;
+}
+
+    </style>
+</head>
+<body>
+    <form action="Final_Task-11.html">
+        <center>
+            <div class="form-container">
+            <table class="reg-table">
+                <tr>
+                    <th colspan="2">Event Registration</th>
+                </tr>
+                <tr>
+                    <th>Username</th>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="password" required></td>
+                </tr>
+                <tr>
+                    <th>Mobile Number</th>
+                    <td><input type="tel" required></td>
+                </tr>
+                <tr>
+                    <th>Events</th>
+                    <td>
+                        <select name="events" required>
+                            <option value=""disabled selected>Select Event</option>
+                            <option>Hackathon</option>
+                            <option>IOT & Robotics</option>
+                            <option>AI Contest</option>
+                        </select>
+                    </td>
+                </tr>
+            </table><br>
+            
+            <button onclick="alert('Your successfully Registered.')">Submit</button>
+            <button>Reset</button>
+            </div>
+        </center>
+    </form>
+</body>
+</html>
